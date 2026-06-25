@@ -1293,6 +1293,7 @@ address { font-style: normal; }
 /* ── Tablets portrait (≤ 768px) ── */
 @media (max-width: 768px) {
   :root { --header-height: 76px; }
+  html { font-size: 17px; } /* legibilidade mobile */
 
   /* Hamburger ON, CTA OFF */
   .nav__hamburger { display: flex; }
@@ -1319,8 +1320,8 @@ address { font-style: normal; }
   }
   .nav__menu.open { right: 0; }
 
-  /* Logo metade do tamanho no mobile */
-  .nav__logo img { height: 58px; }
+  /* Logo no mobile (+30%) */
+  .nav__logo img { height: 75px; }
   .nav__item { width: 100%; }
   .nav__link {
     display: block;
@@ -1377,6 +1378,7 @@ address { font-style: normal; }
 
 /* ── Mobile (≤ 520px) ── */
 @media (max-width: 520px) {
+  html { font-size: 18px; } /* legibilidade mobile pequeno */
   .services__grid { grid-template-columns: 1fr; }
   .differentials__grid { grid-template-columns: 1fr; }
   .testimonials__grid { grid-template-columns: 1fr; }
