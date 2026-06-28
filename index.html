@@ -134,7 +134,10 @@
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="inicio" aria-label="Apresentação">
     <div class="hero__bg">
-      <img src="imgs/fundo.png" alt="Sabará Centro Automotivo — Oficina mecânica em Sabará MG" class="hero__img" loading="eager" fetchpriority="high">
+      <picture>
+        <source media="(max-width: 768px)" srcset="imgs/fundo_cel.png">
+        <img src="imgs/fundo.png" alt="Sabará Centro Automotivo — Oficina mecânica em Sabará MG" class="hero__img" loading="eager" fetchpriority="high">
+      </picture>
       <div class="hero__overlay" aria-hidden="true"></div>
     </div>
 
@@ -255,7 +258,7 @@
         <!-- Balanceamento -->
         <article class="service-card" data-aos="fade-up" data-aos-delay="80">
           <div class="service-card__img-wrap">
-            <img src="imgs/patio.png" alt="Pátio do Sabará Centro Automotivo — balanceamento e serviços" loading="lazy">
+            <img src="imgs/balanceamento.png" alt="Balanceamento de pneus em Sabará" loading="lazy">
             <div class="service-card__img-overlay" aria-hidden="true"></div>
           </div>
           <div class="service-card__body">
@@ -276,7 +279,7 @@
         <!-- Suspensão -->
         <article class="service-card" data-aos="fade-up" data-aos-delay="160">
           <div class="service-card__img-wrap">
-            <img src="imgs/veiculo_suspenso.png" alt="Inspeção de suspensão e amortecedores em Sabará" loading="lazy">
+            <img src="imgs/suspensao.png" alt="Suspensão e amortecedores em Sabará" loading="lazy">
             <div class="service-card__img-overlay" aria-hidden="true"></div>
           </div>
           <div class="service-card__body">
@@ -318,7 +321,7 @@
         <!-- Troca de Óleo -->
         <article class="service-card" data-aos="fade-up" data-aos-delay="320">
           <div class="service-card__img-wrap">
-            <img src="imgs/escritorio_ferramentas.png" alt="Ferramentas e equipamentos do Sabará Centro Automotivo" loading="lazy">
+            <img src="imgs/veiculo_suspenso.png" alt="Troca de óleo em Sabará" loading="lazy">
             <div class="service-card__img-overlay" aria-hidden="true"></div>
           </div>
           <div class="service-card__body">
@@ -405,7 +408,7 @@
             </li>
             <li class="about__feature">
               <i class="fas fa-check-circle" aria-hidden="true"></i>
-              <span>Equipamentos modernos de diagnóstico e alinhamento 3D</span>
+              <span>Equipamentos modernos de diagnóstico e alinhamento</span>
             </li>
             <li class="about__feature">
               <i class="fas fa-check-circle" aria-hidden="true"></i>
@@ -508,6 +511,16 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== ESCRITÓRIO BANNER ===================== -->
+  <div class="escritorio-banner" aria-label="Estrutura do Sabará Centro Automotivo">
+    <div class="escritorio-banner__item">
+      <img src="imgs/escritorio.png" alt="Escritório do Sabará Centro Automotivo" loading="lazy">
+    </div>
+    <div class="escritorio-banner__item">
+      <img src="imgs/escritorio_ferramentas.png" alt="Ferramentas e equipamentos do Sabará Centro Automotivo" loading="lazy">
+    </div>
+  </div>
 
   <!-- ===================== TESTIMONIALS ===================== -->
   <section class="testimonials section" id="depoimentos" aria-label="Depoimentos de Clientes">

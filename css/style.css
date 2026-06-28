@@ -829,6 +829,33 @@ address { font-style: normal; }
   letter-spacing: 0.05em;
 }
 
+/* ===== ESCRITÓRIO BANNER ===== */
+.escritorio-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  overflow: hidden;
+}
+.escritorio-banner__item {
+  position: relative;
+  overflow: hidden;
+  height: clamp(220px, 28vw, 380px);
+}
+.escritorio-banner__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.65s ease;
+}
+.escritorio-banner__item:hover img { transform: scale(1.05); }
+
+@media (max-width: 520px) {
+  .escritorio-banner { grid-template-columns: 1fr; }
+  .escritorio-banner__item { height: 220px; }
+}
+
 /* ===== TESTIMONIALS ===== */
 .testimonials { background: var(--clr-white); }
 
